@@ -390,7 +390,7 @@ will be installed when you restart. Loading the package is covered in the next
 :PROPERTIES:
 :CUSTOM_ID: loading-packages
 :END:
-Ever wonder how Spacemacs can load over a 100 packages in just a few seconds?
+Ever wonder how Spacemacs can load over 100 packages in just a few seconds?
 Such low loading times must require some kind of unreadable black magic that no
 one can understand. Thanks to [[https://github.com/jwiegley/use-package][use-package]], this is not true. It is a package
 that allows easy lazy-loading and configuration of packages. Here are the basics
