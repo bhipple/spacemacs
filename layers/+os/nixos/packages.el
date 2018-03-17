@@ -5,6 +5,7 @@
         (company-nixos-options :requires company)
         (helm-nixos-options :requires helm)
         nix-mode
+        nix-update
         nixos-options
         ))
 
@@ -35,6 +36,14 @@
     (add-to-list 'spacemacs-indent-sensitive-modes 'nix-mode)
     :config
     (electric-indent-mode -1)))
+
+(defun nixos/init-nix-update ()
+  (use-package nix-update
+  :defer t
+  :init
+  (progn
+    (spacemacs/set-leader-keys-for-major-mode 'nix-mode
+      "u" 'nix-update))))
 
 (defun nixos/init-nixos-options ()
   (use-package nixos-options :defer t))
