@@ -29,8 +29,7 @@
 (defun finance/init-evil-ledger ()
   (use-package evil-ledger
     :after ledger-mode
-    :if (memq dotspacemacs-editing-style '(vim hybrid))
-    :hook (ledger-mode . evil-ledger-mode)))
+    :if (memq dotspacemacs-editing-style '(vim hybrid))))
 
 (defun finance/init-ledger-mode ()
   (use-package ledger-mode
